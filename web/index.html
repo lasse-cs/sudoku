@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Sudoku</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/sudoku.css'>
+</head>
+<body>
+  <main>
+    <h1>
+      Sudoku
+    </h1>
+    <section>
+      <div id="sudoku">
+        <div class="mini-grid" >
+          <div tabindex=0 class="cell" data-row="1" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="3"></div>
+        </div>
+        <div class="mini-grid" data-mini="2">
+          <div tabindex=0 class="cell" data-row="1" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="6"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="1" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="1" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="2" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="3" data-col="9"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="4" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="3"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="4" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="6"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="4" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="4" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="5" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="6" data-col="9"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="7" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="3"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="1"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="2"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="3"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="7" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="6"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="4"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="5"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="6"></div>
+        </div>
+        <div class="mini-grid">
+          <div tabindex=0 class="cell" data-row="7" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="7" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="8" data-col="9"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="7"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="8"></div>
+          <div tabindex=0 class="cell" data-row="9" data-col="9"></div>
+        </div>
+      </div>
+      <ul id="button-list">
+        <li>
+          <button type="button">1</button>
+        </li>
+        <li>
+          <button type="button">2</button>
+        </li>
+        <li>
+          <button type="button">3</button>
+        </li>
+        <li>
+          <button type="button">4</button>
+        </li>
+        <li>
+          <button type="button">5</button>
+        </li>
+        <li>
+          <button type="button">6</button>
+        </li>
+        <li>
+          <button type="button">7</button>
+        </li>
+        <li>
+          <button type="button">8</button>
+        </li>
+        <li>
+          <button type="button">9</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+<script src='./js/sudoku.js'></script>
+</html>
